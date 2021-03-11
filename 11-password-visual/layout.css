@@ -3,4 +3,16 @@ body,html{
   padding:0;
 }
 
+input{
+  width:220px;
+  height:27px;
+  border:1px black solid;
+  margin:50px auto;
+}
 
+#eye{
+  position:absolute;
+  left:240px;
+  top:56px;
+  color:grey;
+}
