@@ -3,13 +3,17 @@ $(function(){
       $start=$('#start'),
       $stop=$('#stop'),
       $reset=$('#reset'),
-      now=null;
+      now=null,
+      t=new Array();
 
   $start.click(()=>{
     now=setInterval(time,100);
+    t.push(now);
   })
   $stop.click(()=>{
-    clearInterval(now);
+    for(var i=0;i<t.length;i++){
+      clearInterval(t[i]);
+    }
   })
   $reset.click(()=>{
     $pro.val(0);
