@@ -1,0 +1,39 @@
+body,html{
+    margin:0;
+    padding:0;
+
+}
+#main{
+    margin:20px auto;
+    width:260px;
+
+}
+#calc{
+    margin-left:52px;
+    width:60px;
+
+}
+
+span{
+  color:red;
+  margin-left:5px;
+}
+
+input{
+    margin:5px 0;
+
+}
+
+#width-validate,#height-validate{
+  color:red;
+  margin-left:52px;
+}
+
+input:valid+span:after{
+  content:'✓';
+  color:green
+}
+input:invalid+span:after{
+  content:'✖';
+  color:red;
+}
